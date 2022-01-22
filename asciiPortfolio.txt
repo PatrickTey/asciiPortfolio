@@ -1,0 +1,22 @@
+$ git checkout HEAD portrait.txt 
+$ git add .
+$ git commit
+Use "fg" to return to nano.
+
+[1]+  Stopped                 git commit
+$ git add portrait.txt 
+$ git commit -m "first"
+[master cf61676] first
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+$ git add .
+$ git commit -m "second"
+[master 271ef66] second
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+$ git add .
+$ git reset house.txt 
+Unstaged changes after reset:
+M       house.txt
+$ git commit -m "final"
+[master 8b2d16f] final
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+$ 
